@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tekst</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h2>Zmień tekst</h2>
+    <script>
+        function zmien_tekst() {
+            let blok = document.getElementById('blok');
+            let tekst = blok.innerHTML;
+
+            if (tekst == "Lato, lato, lato czeka...") {
+                document.getElementById('blok').innerHTML = 'Jesień mimozami się zaczyna';
+            } else if (tekst == "Jesień mimozami się zaczyna") {
+                document.getElementById('blok').innerHTML = 'Hu, hu, ha, nasza zima zła';
+            } else if (tekst == "Hu, hu, ha, nasza zima zła") {
+                document.getElementById('blok').innerHTML = 'Wiosna, wiosna, wonna i radosna';
+            } else if (tekst == "Wiosna, wiosna, wonna i radosna") {
+                document.getElementById('blok').innerHTML = 'Lato, lato, lato czeka...';
+            }
+        }
+    </script>
+    <p>Pory roku: <b id="blok">Lato, lato, lato czeka...</b></p>
+    <input type="button" onclick="zmien_tekst()" value="Zmień tekst" />
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zegar cyfrowy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Stick+No+Bills:wght@200..800&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 50px;
+        }
+
+        #czas {
+            font-family: 'Doto', sans-serif;
+            font-size: 80px;
+            font-weight: 700;
+            color: #0f0;
+            padding: 20px 40px;
+            border: 2px solid #0f0;
+            border-radius: 8px;
+            background-color: #000;
+            box-shadow: 0 0 20px #0f0;
+        }
+
+        .tekst {
+            font-family: "Stick No Bills", sans-serif;
+            font-size: 110px;
+            font-weight: 700;
+            color: #0f0;
+            text-shadow: 0 0 20px #0f0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="tekst">Witaj, podróżniczko</h1>
+    <h1 class="tekst">Twój czas:</h1>
+    <div id="czas"></div>
+
+    <script>
+        function Kartka() {
+            let teraz = new Date();
+            let godzina = teraz.getHours();
+            let minuta = teraz.getMinutes();
+            let sekunda = teraz.getSeconds();
+
+            if (minuta < 10) minuta = "0" + minuta;
+            if (sekunda < 10) sekunda = "0" + sekunda;
+
+            document.getElementById("czas").innerText = godzina + ":" + minuta + ":" + sekunda;
+        }
+
+        setInterval(Kartka, 1000);
+        Kartka();
+    </script>
+</body>
+
+</html>
