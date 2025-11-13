@@ -1,0 +1,111 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0; padding: 0;
+  background-color: #000;
+  color: #eee;
+}
+
+header {
+  background-color: #4b0082;
+  color: #f8bbd0;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.7);
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+nav {
+  background-color: #6a0dad;
+  height: auto;
+  text-align: center;
+  box-shadow: inset 0 3px 5px rgba(255,255,255,0.1);
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: #4b0082;
+  color: #f8bbd0;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 -3px 6px rgba(0,0,0,0.7);
+}
+
+main {
+  display: flex;
+  gap: 30px;
+  padding: 0 30px 30px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  flex: 1;
+  background: #4f034f;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(107, 0, 107, 0.7);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+article {
+  flex: 1;
+  overflow-y: auto;
+  color: #eee;
+}
+
+a {
+    font-size: 17px;
+    display: inline-block;
+    padding: 3.5px;
+    text-decoration: none;
+    color: rgb(233, 129, 184);
+    font-weight: 600;
+    transition: color 0.18s ease, transform 0.18s ease;
+}
+
+a:hover { color: rgba(247, 100, 9, 0.974); transform: translateY(-1px); }
+
+ol, ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #d6a5f5;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: auto;
+  box-shadow: 0 6px 15px rgba(107, 0, 107, 0.7);
+  background-color: #2e003e;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #6a0dad;
+  color: #f8bbd0;
+}
+
+th {
+  background-color: #6a0dad;
+  border-left: 1px solid #a859dd;
+  border-right: 1px solid #a859dd;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+h5 {
+  margin: 0;
+  color: #f8bbd0;
+}
